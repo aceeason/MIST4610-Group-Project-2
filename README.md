@@ -10,7 +10,12 @@ Group 2
 8. Steven Thomas - [@st11521](https://github.com/st11521)
 
 ## Dataset Description:
-
+Provider: National Weather Service
+Marketplace Listing Name: National Weather Service Weather Alert Events (PUBLIC_DATA.NWS_WEATHER_ALERT_EVENTS)
+Table Count:
+Row Counts:
+Key Columns:
+Data Types:
 
 ## Questions and Justification:
 
