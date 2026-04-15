@@ -16,6 +16,7 @@ Table Count:
 Row Counts:
 Key Columns:
 Data Types:
+Our group selected the NWS_WEATHER_ALERT_EVENTS because we wanted to analyze weather alert patterns, and gain a better understanding of weather alerts, reaction, and types that happened across the country. Our dataset has 18 columns
 
 ## Questions and Justification:
 
