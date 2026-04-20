@@ -10,12 +10,6 @@ Group 2
 8. Steven Thomas - [@st11521](https://github.com/st11521)
 
 ## Dataset Description:
-Provider: National Weather Service
-Marketplace Listing Name: National Weather Service Weather Alert Events (PUBLIC_DATA.NWS_WEATHER_ALERT_EVENTS)
-Table Count:
-Row Counts:
-Key Columns:
-Data Types:
 Our group selected the NWS_WEATHER_ALERT_EVENTS because we wanted to analyze weather alert patterns, and gain a better understanding of weather alerts, reaction, and types that happened across the country. Our dataset has 18 columns and 2.8 million rows. 
 
 ## Questions and Justification:
