@@ -21,6 +21,6 @@ Question 2:
 
 
 ## Analysis and Results:
-
+Query 1: The chart shows the average number of minutes between an alert and when the event actually starts. It reveals that high velocity events such as tornadoes have significantly smaller preparation times compared to slower events like winter storms. It also highlights where it is more difficult to forecast events, as those with shorter intervals have much slimmer margins for error.
 
 ## Streamlit App
