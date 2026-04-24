@@ -23,7 +23,7 @@ Key Columns:
 Question 1: What is the average lead time (time from when the alert is sent and when the event actually begins) to prepare for Extreme vs. Severe events, and which specific event type provides the shortest window for public response? The relevant columns are EVENT_TYPE, EVENT_SEVERITY, SENT_TIMESTAMP, and ONSET_TIMESTAMP. This question requires calculating interval gaps between two times. It also requires aggregation and filtering to exclude post-onset alerts (where the event has already started) to ensure the average isn't skewed by ongoing or past warnings. This reveals the technical limitations of the forecasting. If extreme tornado warnings have a significantly shorter lead time than severe ones, it highlights a critical vulnerability in emergency preparedness where the most dangerous events are the hardest to predict in advance.
 
 Question 2: How do the frequency and severity compare across the different months in the dataset?
-The relevant columns are EVENT_TYPE, SENT_TIMESTAMP, ONSET_TIMESTAMP, and EVENT_SEVERITY. This questions requires calculating which type of event occurs during what time in the year it is. It requires aggregation and filtering to coordinate month, and weather occurence type. This data gives information to people about which months should they most be prepared for severe weather. They can create the correct types of weather emergency plans and have go bags prepared in those severe weather months.
+The relevant columns are EVENT_TYPE, SENT_TIMESTAMP, ONSET_TIMESTAMP, and EVENT_SEVERITY. This questions requires calculating which type of event occurs during what time in the year it is. It requires aggregation and filtering to coordinate month, and weather occurence type.
 
 ## Data Manipulation:
 
@@ -36,4 +36,8 @@ Query 1: The chart shows the average number of minutes between an alert and when
 Query 2: This heatgrid categorizes extreme events into specific lead-time buckets to visualize the actual window of opportunity the public has to seek safety. By identifying what percentage of the most dangerous events provide less than five minutes of warning, you can pinpoint specific event types where current forecasting technology fails to provide a safe margin of error. The data further proves that tornado watches are the most common critical events, and extreme cold watches give people much more time to prepare.
 
 Question 2:
+
+Query 1: The number of monthly alert chart gives us information about weather-related activities that occur throughout the year. This allows stakeholder to learn which months of the year they need to be more prepared for weather events. This information can also be used for the future to see if weather alerts are increasing over time. This allows stakeholders to have better scheduling and resource distributions. The stakeholders will know what are the worse months and prepare for them accordingly. 
+
+Query 2: This bar chart shows us the amount of alerts that have occurred each month during the time period while also allowing us to see the severity of each type of alert during that month. From this data, we can see that the most types of alerts are either moderate or severe. This data gives information to the public about which months they should they most be prepared for severe weather. They can create the correct types of weather emergency plans and have go bags prepared in those severe weather months. Allows people to be more proactive than reactive to severe weather events. 
 ## Streamlit App
