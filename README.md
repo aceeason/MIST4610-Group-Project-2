@@ -23,7 +23,7 @@ Key Columns:
 Question 1: What is the average lead time (time from when the alert is sent and when the event actually begins) to prepare for Extreme vs. Severe events, and which specific event type provides the shortest window for public response? The relevant columns are EVENT_TYPE, EVENT_SEVERITY, SENT_TIMESTAMP, and ONSET_TIMESTAMP. This question requires calculating interval gaps between two times. It also requires aggregation and filtering to exclude post-onset alerts (where the event has already started) to ensure the average isn't skewed by ongoing or past warnings. This reveals the technical limitations of the forecasting. If extreme tornado warnings have a significantly shorter lead time than severe ones, it highlights a critical vulnerability in emergency preparedness where the most dangerous events are the hardest to predict in advance.
 
 Question 2: How do the frequency and severity compare across the different months in the dataset?
-The relevant columns are EVENT_TYPE, SENT_TIMESTAMP, ONSET_TIMESTAMP, and EVENT_SEVERITY. This questions requires calculating which type of event occurs during what time in the year it is. It requires aggregation and filtering to coordinate month, and weather occurence type. 
+The relevant columns are EVENT_TYPE, SENT_TIMESTAMP, ONSET_TIMESTAMP, and EVENT_SEVERITY. This questions requires calculating which type of event occurs during what time in the year it is. It requires aggregation and filtering to coordinate month, and weather occurence type. This data gives information to people about which months should they most be prepared for severe weather. They can create the correct types of weather emergency plans and have go bags prepared in those severe weather months.
 
 ## Data Manipulation:
 
