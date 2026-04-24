@@ -40,4 +40,10 @@ Question 2:
 Query 1: The number of monthly alert chart gives us information about weather-related activities that occur throughout the year. This allows stakeholder to learn which months of the year they need to be more prepared for weather events. This information can also be used for the future to see if weather alerts are increasing over time. This allows stakeholders to have better scheduling and resource distributions. The stakeholders will know what are the worse months and prepare for them accordingly. 
 
 Query 2: This bar chart shows us the amount of alerts that have occurred each month during the time period while also allowing us to see the severity of each type of alert during that month. From this data, we can see that the most types of alerts are either moderate or severe. This data gives information to the public about which months they should they most be prepared for severe weather. They can create the correct types of weather emergency plans and have go bags prepared in those severe weather months. Allows people to be more proactive than reactive to severe weather events. 
+
+Query 3:
+
+Query 4: This chart focuses on the just the severe weather alerts and how often they occur during each month. These events will have the highest risk towards public safety so there needs to be information out there on how to be prepared for these events. The data shows us that the more severe weather months are during spring and summer while the less severe weather months are during the winter. This relates to the other graph because it shows that resources and staffing should be more prepared and available during the summer months where there are more severe weather events. 
+
+From the last graph we created, we noticed the concentration of severe and moderate alerts and wanted to dive deeper. From this graph, there are more severe weather during spring and summer while less severe events during the winter. 
 ## Streamlit App
