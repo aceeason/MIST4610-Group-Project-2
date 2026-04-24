@@ -45,5 +45,4 @@ Query 3:
 
 Query 4: This chart focuses on the just the severe weather alerts and how often they occur during each month. These events will have the highest risk towards public safety so there needs to be information out there on how to be prepared for these events. The data shows us that the more severe weather months are during spring and summer while the less severe weather months are during the winter. This relates to the other graph because it shows that resources and staffing should be more prepared and available during the summer months where there are more severe weather events. 
 
-From the last graph we created, we noticed the concentration of severe and moderate alerts and wanted to dive deeper. From this graph, there are more severe weather during spring and summer while less severe events during the winter. 
 ## Streamlit App
