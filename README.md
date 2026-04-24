@@ -26,7 +26,7 @@ Question 2: How do the frequency and severity compare across the different month
 The relevant columns are EVENT_TYPE, SENT_TIMESTAMP, ONSET_TIMESTAMP, and EVENT_SEVERITY. This questions requires calculating which type of event occurs during what time in the year it is. It requires aggregation and filtering to coordinate month, and weather occurence type.
 
 ## Data Manipulation:
-
+ Query 1: To prepare the dataset for analysis, we first had to ensure that the lead time calculations would be accurate and meaningful.  We had to exclude the any rows where the OFF_SETSTAMP was had been earlier or equal to the SENT_TIMESTAMP removing any events that had started before or at the same time the alert had been sent as those results would have came to late and not send any real warning to people. We have also narrowed the data set to only contain events that are characterizes as severe or extreme to focus on the most impactful weather events to ensure that the results would be more impactful in ensuring emergency preparedness and public safety. 
 
 ## Analysis and Results:
 Question 1:
