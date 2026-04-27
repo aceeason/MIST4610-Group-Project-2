@@ -53,3 +53,7 @@ Query 3: This chart focuses on the just the severe weather alerts, specifically 
 Query 4: While our previous query shows us the number of alerts severe weather events have during each month, this query allows us to see how many of the total events are severe weather events. We are able to see which months have the highest risk intensity. It is helpful for our stakeholders as to see that some months may have a lot of alerts but the majority of them are actually minor. They can have a higher level of readiness for these high risk months. 
 
 ## Streamlit App
+![Lead Times](LeadTimes.png)
+![Temporal Trends](temporalTrends.png)
+![Severity](severity.png)
+The dashboard’s primary interactive element is the tabbed interface that allows users to toggle between lead time statistics, temporal trends, and severity of events. Analytically, this allows stakeholders to correlate the average lead time of alerts with their actual severity levels across different months, transforming raw data into actionable benchmarks. Ultimately, the dashboard moves beyond simple reporting to act as a diagnostic tool for assessing public safety communication efficiency. AI was used to make the app more user friendly and to streamline data in each tab.
