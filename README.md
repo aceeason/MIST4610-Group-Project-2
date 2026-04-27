@@ -30,7 +30,7 @@ The relevant columns are EVENT_TYPE, SENT_TIMESTAMP, ONSET_TIMESTAMP, and EVENT_
 
  Query 2: This query analyzes how the frequency and severity of weather alerts change throughout the year by organizing the time data. It extracts the month from SENT_TIMESTAMP using DATE_TRUNC('MONTH', SENT_TIMESTAMP) to create a standardized monthly timestamp and MONTH(SENT_TIMESTAMP) to generate a numeric month value for calendar ordering. The data is filtered to contain only "Extreme" and "Severe" alerts, then groups the data by EVENT_SEVERITY, month and month number, using COUNT(*) to calcuate how many alerts occur in each category. Then they are sorted by chonological order and alert count to highlight periods of most activity. 
 
- Query 3: This query transforms the dataset to highlight how the proportionof high severity weather alerts changes throught the year. It first takes the monthly time information from SENT_TIMESTAMP
+ Query 3: This query transforms the dataset to highlight how the proportionof high severity weather alerts changes throught the year. It first takes the monthly time information from SENT_TIMESTAMP  using DATE__TRUNC to group alerts into periods. It then calculates the total number of alerts per month using COUNT(*), while also using a conditional SUM(CASE WHEN TO only count
 
 Query 2:
  
