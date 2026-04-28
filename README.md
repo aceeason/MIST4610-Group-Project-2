@@ -28,17 +28,15 @@ The relevant columns are EVENT_TYPE, SENT_TIMESTAMP, ONSET_TIMESTAMP, and EVENT_
 ## Data Manipulation:
  Query 1: To prepare the dataset for analysis,  we had to exclude the any rows where the OFF_SETSTAMP was had been earlier or equal to the SENT_TIMESTAMP removing any events that had started before or at the same time the alert had been sent as those results would have came to late and not send any real warning to people. We have also narrowed the data set to only contain events that are characterizes as severe or extreme to focus on the most impactful weather events to ensure that the results would be more impactful in ensuring emergency preparedness and public safety. We computed the difference in time from when an event begins and when the alert is sent using DATEDIFF creating a new metric of lead time to answer how much preperation time is avaliable. The query then aggregates the results by EVENT_TYPE and EVENT_SEVERITY to allow for meaning ful comparisons across different weather events and severity. Then the results are sorted in ascending order of average lead time,making it easier to to identify whick events have the shortest warning window and so posing the greatest risk.
 
- Query 1:
-
  Query 2: This query analyzes how the frequency and severity of weather alerts change throughout the year by organizing the time data. It extracts the month from SENT_TIMESTAMP using DATE_TRUNC('MONTH', SENT_TIMESTAMP) to create a standardized monthly timestamp and MONTH(SENT_TIMESTAMP) to generate a numeric month value for calendar ordering. The data is filtered to contain only "Extreme" and "Severe" alerts, then groups the data by EVENT_SEVERITY, month and month number, using COUNT(*) to calcuate how many alerts occur in each category. Then they are sorted by chonological order and alert count to highlight periods of most activity. 
 
 Query 3: This query filters thw dataset to include only "Severe" and "Extreme" weather alerts and extracts the monthly data from SENT_TIMESTAMP using DATE_TRUNC and MONTH, and then uses COUNT(*) to calculate how many severe weather alerts occur in each time period. Then it is grouped by severity and month to compare how frequent dangerous events occur. The results are sorted in calender order and and alert count to highlight the month with the highest concentration of severe weather. 
 
- Query 4: This query transforms the dataset to highlight how the proportionof high severity weather alerts changes throught the year. It first takes the monthly time information from SENT_TIMESTAMP  using DATE__TRUNC to group alerts into periods. It then calculates the total number of alerts per month using COUNT(*), while also using a conditional SUM(CASE WHEN EVENT_SEVERITY IN ('Severe', 'Extreme') to only count high severity events. To make this comparison more meaningful, the query computes the percentage of alerts and rounds the results. Finally  the data is grouped by month and is sorted by calender order and limited to 10,000 rows for effciency. These manipulations allow for clear visualization of seasonal risk, which can inform better planning in higher risk periods.
+Query 4: This query transforms the dataset to highlight how the proportionof high severity weather alerts changes throught the year. It first takes the monthly time information from SENT_TIMESTAMP  using DATE__TRUNC to group alerts into periods. It then calculates the total number of alerts per month using COUNT(*), while also using a conditional SUM(CASE WHEN EVENT_SEVERITY IN ('Severe', 'Extreme') to only count high severity events. To make this comparison more meaningful, the query computes the percentage of alerts and rounds the results. Finally  the data is grouped by month and is sorted by calender order and limited to 10,000 rows for effciency. These manipulations allow for clear visualization of seasonal risk, which can inform better planning in higher risk periods.
 
- 
+Query 5:
 
-Query 2:
+Query 6:
  
 ## Analysis and Results:
 Question 1:
